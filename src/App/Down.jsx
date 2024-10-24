@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-
+import load from './icons8-loading.gif'
 const Down = () => {
     const [days, setDays] = useState()
     const [hours, setHours] = useState()
@@ -44,7 +44,9 @@ const Down = () => {
     <div className=''>
      {
         isLoading ? (
-            <h1 className='text-center pt-52'>LOADING........</h1>
+           <div className='flex items-center justify-center h-[100vh]'>
+             <img  src={load} alt="" />
+           </div>
         ):(
             <section className="container">
             <div className="flex flex-col gap-20 bg-zinc-950 px-20 py-30 max-sm:px-4 rounded-3xl items-center max-sm:gap-16">
