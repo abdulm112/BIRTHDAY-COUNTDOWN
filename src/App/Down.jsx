@@ -10,7 +10,10 @@ const Down = () => {
     const Countdown = () => {
         const endate = new Date("October 28, 2024 00:00:00").getTime()
         const today = new Date().getTime()
-
+        const kkk = new Date().getDate()
+        if (kkk == 28){
+            alert('Happy birthday Abdulmujeeb')
+        }
         const reminder = endate - today
         
         const sec = 1000
@@ -33,7 +36,8 @@ const Down = () => {
         setMinutes(timeMinutes)
         setSec(timeSec)
         setIsLoading(false)
-        
+
+       
     } 
 
     useEffect(() => {
@@ -45,7 +49,7 @@ const Down = () => {
      {
         isLoading ? (
            <div className='flex items-center justify-center h-[100vh]'>
-             <img  src={load} alt="" />
+             <img src={load} alt="" />
            </div>
         ):(
             <section className="container">
