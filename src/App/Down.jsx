@@ -12,7 +12,7 @@ const Down = () => {
         const today = new Date().getTime()
         const kkk = new Date().getDate()
         if (kkk == 28){
-            alert('Happy birthday Abdulmujeeb')
+            
         }
         const reminder = endate - today
         
