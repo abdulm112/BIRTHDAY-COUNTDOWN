@@ -8,7 +8,7 @@ const Down = () => {
     const [isLoading, setIsLoading] =useState(true)
     
     const Countdown = () => {
-        const endate = new Date("October 28, 2024 00:00:00").getTime()
+        const endate = new Date("October 28, 2025 00:00:00").getTime()
         const today = new Date().getTime()
         const kkk = new Date().getDate()
         if (kkk == 28){
